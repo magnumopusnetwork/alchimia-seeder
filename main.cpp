@@ -400,8 +400,10 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"dnsseed.alchimiatools.com", "dnsseed.alchimiapool.org", "dnsseed.ltc.xurious.com", "dnsseed.koin-project.com", "seed-a.alchimia.loshan.co.uk", "dnsseed.thrasher.io", ""};
-static const string testnet_seeds[] = {"testnet-seed.alchimiatools.com", "seed-b.alchimia.loshan.co.uk", "testnet-seed.ltc.xurious.com", "dnsseed-testnet.thrasher.io", ""};
+static const string mainnet_seeds[] = {"dnsseed.magnumopusnetwork.com", ""};
+static const string testnet_seeds[] = {"testnet-seed.magnumopusnetwork.com", ""};
+//static const string mainnet_seeds[] = {"dnsseed.alchimiatools.com", "dnsseed.alchimiapool.org", "dnsseed.ltc.xurious.com", "dnsseed.koin-project.com", "seed-a.alchimia.loshan.co.uk", "dnsseed.thrasher.io", ""};
+//static const string testnet_seeds[] = {"testnet-seed.alchimiatools.com", "seed-b.alchimia.loshan.co.uk", "testnet-seed.ltc.xurious.com", "dnsseed-testnet.thrasher.io", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
