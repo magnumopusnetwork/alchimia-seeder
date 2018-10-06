@@ -101,6 +101,7 @@ public:
   }
   
   bool IsGood() const {
+  /*
     if (ip.GetPort() != GetDefaultPort()) return false;
     if (!(services & NODE_NETWORK)) return false;
     if (!ip.IsRoutable()) return false;
@@ -115,7 +116,8 @@ public:
     if (stat1W.reliability > 0.45 && stat1W.count > 16) return true;
     if (stat1M.reliability > 0.35 && stat1M.count > 32) return true;
     
-    return false;
+    return false;*/
+    return true;
   }
   int GetBanTime() const {
     if (IsGood()) return 0;
